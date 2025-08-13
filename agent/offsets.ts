@@ -13,10 +13,10 @@ export enum Offsets {
     Version,
     PayloadSize,
     PayloadPtr,
-    Decode,
     OperatorNew,
     StringConstructor,
     State,
     GetMessageType = Process.pointerSize * 5,
     Destruct = Process.pointerSize * 7,
+    Decode = 3 * Process.pointerSize
 }
