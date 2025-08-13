@@ -5,8 +5,6 @@ export enum Offsets {
     HomePageStartGame,
     MessagingSend,
     NativeFontFormatString,
-    GetMessageType,
-    Destruct,
     MessageLength,
     ByteStream,
     MessageManagerInstance,
@@ -17,5 +15,8 @@ export enum Offsets {
     PayloadPtr,
     Decode,
     OperatorNew,
-    StringConstructor
+    StringConstructor,
+    State,
+    GetMessageType = Process.pointerSize * 5,
+    Destruct = Process.pointerSize * 7,
 }

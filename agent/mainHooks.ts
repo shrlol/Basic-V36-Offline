@@ -12,6 +12,7 @@ export function installHooks() {
         {
             onEnter: function (args) {
                 args[0].add(Process.pointerSize).readPointer().add(Offsets.HasConnectFailed).writeU8(0);
+                args[0].add(Process.pointerSize).readPointer().add(Offsets.State).writeInt(5);
             }
         });
 
